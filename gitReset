@@ -1,0 +1,10 @@
+#!/usr/bin/zsh
+echo -n "This will throw away all your local changes. Continue? "
+read a
+if [ "$a" != "y" ]
+then
+    echo "Never mind"
+    exit 0
+fi
+git fetch origin
+git reset --hard origin/master
