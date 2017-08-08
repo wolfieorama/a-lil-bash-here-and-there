@@ -4,5 +4,6 @@ echo "1. There are `ls $PWD | wc -l` files"
 echo "2. The following files end in .c or .h:"
 ls $PWD | grep  "\.[ch]$"
 echo "3. The following files have a digit in their name:"
+ls $PWD | grep "[0-9]"
 echo "4. The following files are text files:"
- 
+ls $PWD | file * | grep ASCII
