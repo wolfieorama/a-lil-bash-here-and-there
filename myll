@@ -1,3 +1,4 @@
 #!/bin/bash
 #!/usr/bin/zsh
+echo "this is $0"
 ls -l .
