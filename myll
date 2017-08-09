@@ -1,4 +1,4 @@
 #!/bin/bash
 #!/usr/bin/zsh
-echo "this is $0"
+echo "running command $0"
 ls -l .
