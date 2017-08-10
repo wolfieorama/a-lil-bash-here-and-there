@@ -6,4 +6,4 @@ ls $1 | grep  "\.[ch]$"
 echo "3. The following files have a digit in their name:"
 ls $1 | grep "[0-9]"
 echo "4. The following files are text files:"
-file $1*  | grep text 
+file $1/* | grep text 
