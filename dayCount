@@ -1,0 +1,1 @@
+cat $1 | grep -v 'Date of Sale' | cut -f1 -d '|' | cut -f1 -d '/' | sort -u | wc -l
