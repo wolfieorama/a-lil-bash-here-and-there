@@ -13,10 +13,10 @@ echo "question 3: there are `cat $1 | grep -v "Date of Sale" | cut -f3 -d '|' | 
 echo "question 4: there were `cat $1 | grep -v "Date of sale" | cut -f8 -d '|' | wc -l` apartments sold"
 
 # returns the least expensive house from the list
-echo "question 5: the least expensive house is `cat $1 | sort -k5 -t '|' -n | grep -v "Date of Sale" | head -1`."
+echo "question 5: the least expensive house is `cat $1 | sort -k5 -t '|' -n | grep -v "Date of Sale" | head -1 | cut -f2 -d '|'`"
 
 # returns the most expensive house in the data
-echo "question 6: the most expensive house is `cat $1 |sort -k5 -t '|' -n | grep -v "Date of Sale" | tail -1`."
+echo "question 6: the most expensive house is `cat $1 |sort -k5 -t '|' -n | grep -v "Date of Sale" | tail -1 | cut -f2 -d '|'`"
 
 # returns the number of properties with info about the area of property sold
 echo "question 7: there are `cat $1 | grep -v "Date of Sale" | cut -f9 -d '|' | grep -cP '\S'` properties with information about the area of the property sold"
