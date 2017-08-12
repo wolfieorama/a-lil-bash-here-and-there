@@ -1,5 +1,0 @@
-file_processsor () {
-	echo "question 1: there is `cat $1 | cut -f4 -d '|' | grep -v "Date of Sale" | sort -u | wc -l` unique county represented in the data"
-}
-
-file_processor PPR-2017-Dublin.psv

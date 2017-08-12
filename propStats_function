@@ -1,0 +1,7 @@
+processor () {
+
+	echo "question 1: there is `cat $1 | cut -f4 -d '|' | grep -v "Date of Sale" | sort -u | wc -l`" 
+}
+
+# invoke the function
+processor /home/johnmunyi/data_problem/PPR-2017-Dublin.psv
