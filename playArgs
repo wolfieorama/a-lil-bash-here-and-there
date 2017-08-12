@@ -1,0 +1,13 @@
+echo "Arguments1: $1"
+echo "Arguments2: $2"
+echo "Arguments3: $3"
+echo "Arguments4: $4"
+echo "Arguments5: $5"
+echo "Arguments6: $6"
+
+echo "all the arguements ${@}"
+
+for arg in "${@}"
+do
+    echo "$arg"
+done
